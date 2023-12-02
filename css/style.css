@@ -1,9 +1,12 @@
+.nav {
+  position: absolute;
+  font-family: "Major Mono Display", sans-serif;
+}
+
 .monBackground {
   background-image: url("/images/monrone2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 20% 20%;
-  height: 300px; */
   background-position: center;
   height: 100vh;
 }
