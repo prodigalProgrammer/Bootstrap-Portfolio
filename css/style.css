@@ -1,22 +1,33 @@
 :root {
+  /* Preset colours to use for the styling of my page. */
   --jet: #2d2e2e;
   --dim-grey: #716969;
   --rose-quartz: #bcabae;
 }
+/* 
+=====================================================================
+HEADER AREA
+=====================================================================
+*/
+
 .nav {
+  /* Positions Navigation Bar within the jumbotron display area. */
   position: absolute;
   font-family: "Major Mono Display", sans-serif;
 }
 
 .monBackground {
+  /* Image to display in the jumbotron area. */
   background-image: url("/images/monrone2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* Will cover the entire height of the display. */
   height: 100vh;
 }
 
 .bi-chevron-down::before {
+  /* Animated chevron to indicate 'more content below'. */
   font-size: clamp(100px, 8vw, 300px) !important;
   color: #fff;
   animation: point 2.5s infinite;
@@ -30,45 +41,81 @@
     translate: 0px 0px;
   }
 }
+
 h1 {
+  /* Title on the jumbotron with a Google Font. */
   font-family: "Monofett", monospace;
   font-size: clamp(55px, 10vw, 200px) !important;
   color: #212529;
 }
+/* 
+=====================================================================
+MAIN AREA
+=====================================================================
+*/
 body {
+  /* Entire body will be this colour. */
   background-color: var(--jet);
 }
 h2 {
+  /* Google Font for all h2 headers. */
   font-family: "Major Mono Display", monospace;
   color: #fff;
 }
 h3,
 p,
 .btn {
+  /* Google Font for all h3, p and .btn classes. */
   font-family: "Nova Square", sans-serif;
-  color: #fff;
 }
+
 .card-body {
+  /* Styling the card body. */
   background-color: var(--dim-grey);
 }
 .card-header {
+  /* Stying card header. */
   background-color: var(--rose-quartz);
 }
-.ytVideo {
-  aspect-ratio: 16/9;
-  background-color: black;
+img {
+  /* Making sure all images are sized nicely. */
+  background-size: cover !important;
 }
+.ytVideo {
+  /* Aspect ratio of a square for the embeded video. */
+  aspect-ratio: 1 / 1;
+}
+/* 
+=====================================================================
+FOOTER AREA
+=====================================================================
+*/
 .footer-list {
+  /* Removing Bullet-points from the Footer List. */
   list-style-type: none;
 }
 .footer-link {
+  /* Styling the links in the footer. */
   font-family: "Nova Square", sans-serif;
   text-decoration: none;
   border-radius: 20px;
   transition: all 500ms;
 }
 .footer-link:hover {
+  /* Hover effect for links in the footer. */
   color: #fff !important;
   background-color: #212529;
   box-shadow: 0px 0px 10px 3px #ffc108;
+}
+/* 
+=====================================================================
+MEDIA QUERY
+=====================================================================
+*/
+@media screen and (width >= 768px) and (width < 1024px) {
+  /* Reducing the size of the "About Me" and "Prodigal P" headers for the width changes. */
+  .pp-title,
+  .abtme-title {
+    font-size: 45px !important;
+  }
 }
