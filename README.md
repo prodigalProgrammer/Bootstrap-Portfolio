@@ -19,12 +19,14 @@
 </ol>
 </details>
 
+<img src="Bootstrap-Portfolio.png" width="1000px">
+
 ## Description
 
 This is a project that primarily uses Bootstrap v.5 to function. There are many shortcuts to features of traditional CSS but all of it is written in the HTML portion of the code. As we only had a week to learn bootstrap, there were still a few things I couldn't recreate in this Bootstrap version of my Porfolio so I had to take a diffreent approach.
 I'm still mostly happy with this finished product and hope to build on my Bootstrap experience as I know many Web Developers use this framework.
 
-_Find the link to the the deployed website [here]()_
+_Find the link to the the deployed website [here](https://prodigalprogrammer.github.io/Bootstrap-Portfolio/)_
 
 <p align="right">(<a href="#my-bootstrap-portfolio" >Back to top</a>)</p>
 
